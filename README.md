@@ -3,6 +3,7 @@ It is a simple and fast emergency application built using  mobile app creation (
 With a single tap, the app instantly makes a call to your contact what you given.  
 This app doesn't use location, GPS, or internet.
 It focuses only on calling.
+
 Features:
     -Instantly calls the number you set.
     -Works without internet.
@@ -31,22 +32,24 @@ Features:
     -Bulb ON/OFF Control: Two buttons to control a bulb connected to an IoT device.
     -Real-time Firebase Sync: The app communication directly with Firebase Realtime Database for instant updates.
     -Built entirely using Kodular: No coding required drag and drop logic.
+
 Technologies Used:
 . Kodular Creator - For building the Android app
 . Firebase Realtime Database - For storing sensors values and light status.
 . IoT Hardware - Raspberry pi with Ultrasonic sensor.
 . Intrent Connectivity - For live communication.
+
 Firebase Data Structure:
 project1
  ├── lightStatus: "0"
  └── sensorData1
        └── Eggtray: "Empty"
+
 How It Works:
 1. IoT device reads egg tray sensor value.
 2. Sensor value is pushed to Firebase under sensorData1.
 3. Kodular app reads this value and displays Empty.
 4. When user presses ON or OFF, the app updates lightStatus.
 5. IoT device reads lightStatus and turns the bulb ON or OFF.
-
 
 
